@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>못생긴 강아지</title>
+    <style>
+        .dog {
+            position: relative;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .head {
+            width: 200px;
+            height: 180px;
+            background-color: #b38b6d;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .ear {
+            width: 60px;
+            height: 80px;
+            background-color: #b38b6d;
+            position: absolute;
+            top: -30px;
+            border-radius: 30px;
+        }
+
+        .ear.left {
+            left: 10px;
+            transform: rotate(-30deg);
+        }
+
+        .ear.right {
+            right: 10px;
+            transform: rotate(30deg);
+        }
+
+        .eye {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+        }
+
+        .eye.left {
+            left: 40px;
+        }
+
+        .eye.right {
+            right: 40px;
+        }
+
+        .nose {
+            width: 50px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 50px;
+            left: 75px;
+        }
+
+        .mouth {
+            width: 100px;
+            height: 40px;
+            border-bottom: 5px solid #333;
+            border-radius: 0 0 100px 100px;
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+        }
+
+        .tongue {
+            width: 40px;
+            height: 30px;
+            background-color: #ff9999;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 10px;
+            left: 80px;
+        }
+
+        .drool {
+            width: 10px;
+            height: 20px;
+            background-color: rgba(0, 0, 255, 0.2);
+            position: absolute;
+            bottom: -20px;
+            left: 95px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dog">
+        <div class="head">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="tongue"></div>
+            <div class="drool"></div>
+        </div>
+    </div>
+</body>
+</html> 

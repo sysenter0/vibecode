@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>못생긴 강아지</title>
+    <style>
+        .dog {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+        }
+
+        .head {
+            position: absolute;
+            width: 200px;
+            height: 180px;
+            background: #b38b6d;
+            border-radius: 50%;
+            top: 50px;
+            left: 50px;
+        }
+
+        .ear-left, .ear-right {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: #b38b6d;
+            border-radius: 30px;
+        }
+
+        .ear-left {
+            transform: rotate(-30deg);
+            left: 20px;
+            top: 20px;
+        }
+
+        .ear-right {
+            transform: rotate(30deg);
+            right: 20px;
+            top: 20px;
+        }
+
+        .eye-left, .eye-right {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            background: #000;
+            border-radius: 50%;
+            top: 80px;
+        }
+
+        .eye-left {
+            left: 50px;
+            transform: rotate(20deg);
+        }
+
+        .eye-right {
+            right: 50px;
+            transform: rotate(-20deg);
+        }
+
+        .nose {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            background: #333;
+            border-radius: 20px;
+            top: 120px;
+            left: 80px;
+        }
+
+        .mouth {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            border-bottom: 8px solid #333;
+            border-radius: 0 0 100px 100px;
+            top: 140px;
+            left: 50px;
+        }
+
+        .tongue {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            background: #ff9999;
+            border-radius: 20px;
+            top: 170px;
+            left: 80px;
+        }
+
+        .spots {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #8b6b4f;
+            border-radius: 50%;
+        }
+
+        .spot1 { top: 60px; left: 40px; }
+        .spot2 { top: 90px; right: 40px; }
+        .spot3 { top: 120px; left: 140px; }
+
+        body {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dog">
+        <div class="head">
+            <div class="ear-left"></div>
+            <div class="ear-right"></div>
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="tongue"></div>
+            <div class="spots spot1"></div>
+            <div class="spots spot2"></div>
+            <div class="spots spot3"></div>
+        </div>
+    </div>
+</body>
+</html>
